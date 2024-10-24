@@ -15,10 +15,26 @@ const videoContainer = document.getElementById('video-container');
 const defaultChannel = 'techguyweb';
 
 
-// Load Auth2 Library
+// Load OAuth2 Library
 function handleClientLoad(){
 
     gapi.load('client:auth2', initClient);
 
 }
+
+// Init API Client Library & 
+// Set up Sign In Listeners
+function initClient(){
+
+    gapi.client.init({
+
+        discoveryDocs : DISCOVERY_DOCS,
+        clientId : CLIENT_ID,
+        scope: SCOPES
+
+    })
+}
+
+
+
 
