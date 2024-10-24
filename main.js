@@ -32,7 +32,21 @@ function initClient(){
         clientId : CLIENT_ID,
         scope: SCOPES
 
-    })
+    }) // Returns a Promise
+    .then(() => {
+
+        // Listen for Sign In state changes
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+
+        // Handle initial Sign In state
+        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+
+        // Handle Log In & Log Out button clicks
+        authorizeButton.onclick = handleAuthClick;
+        signoutButton.onclick = handleSignoutClick;
+
+    });
+
 }
 
 
