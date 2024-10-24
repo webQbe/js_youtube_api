@@ -79,5 +79,13 @@ function handleAuthClick(){
 
 }
 
+// Handle Logout
+function handleSignoutClick(){
+
+    gapi.auth2.getAuthInstance().signOut();
+
+}
+
+
 
 
