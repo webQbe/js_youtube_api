@@ -15,7 +15,7 @@ const videoContainer = document.getElementById('video-container');
 const defaultChannel = 'techguyweb';
 
 
-// Load OAuth2 Library
+// Load Auth2 Library
 function handleClientLoad(){
 
     gapi.load('client:auth2', initClient);
@@ -72,6 +72,12 @@ function updateSignInStatus(isSignedIn){
     }
 }
 
+// Handle Login
+function handleAuthClick(){
+
+    gapi.auth2.getAuthInstance().signIn();
+
+}
 
 
 
