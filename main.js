@@ -49,6 +49,29 @@ function initClient(){
 
 }
 
+// Update UI sign in state changes
+function updateSignInStatus(isSignedIn){
+
+    // Check if user signed in
+    if(isSignedIn){
+
+        authorizeButton.style.display = 'none'; // Hide sign in button
+        signoutButton.style.display = 'block'; // Show sign out button
+        content.style.display = 'block'; // Show content
+        videoContainer.style.display = 'block'; // Show videos
+        getChannel(defaultChannel); // Interact with API
+
+    } else {
+
+        // When signed out
+        authorizeButton.style.display = 'block'; // Show sign in button
+        signoutButton.style.display = 'none'; 
+        content.style.display = 'none'; 
+        videoContainer.style.display = 'none'; 
+
+    }
+}
+
 
 
 
