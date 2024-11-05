@@ -11,7 +11,7 @@ const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
 // Define default channel
-const defaultChannel = 'Veritasium';
+const defaultChannel = 'UC1ZBQ-F-yktYD4r7Z2bWWMA'; // Veritasium's channel ID
 
 // Token client
 let tokenClient;
@@ -87,23 +87,18 @@ function getChannel(channel, accessToken){
 
     // Construct URL specify the fields we need
     // Pass Access Token
-    const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics&forUsername=${channel}&access_token=${accessToken}`;
+    const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics&id=${channel}&access_token=${accessToken}`;
 
     fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('No channel by that name.');  // Error Handling
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
-            console.log(data);
-            // Further processing with channel data if needed
+            if (data.items && data.items.length > 0) {
+                console.log(data.items[0]);
+            } else {
+                alert('No channel data found.');
+            }
         })
-        .catch(error => {
-            console.error("Error fetching channel data:", error);  // Error Handling
-            alert('No channel by that name.');
-        });
+        .catch(error => console.error("Error fetching channel data:", error));
 
 
         /*  Explanation
