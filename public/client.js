@@ -18,36 +18,21 @@ const defaultChannel = 'techguyweb';
 // Load Auth2 Library
 function handleClientLoad(){
 
-    gapi.load('client:auth2', initClient);
-
-}
-
-// Init API Client Library & 
-// Set up Sign In Listeners
-function initClient(){
-
-    gapi.client.init({
-
-        discoveryDocs : DISCOVERY_DOCS,
-        clientId : CLIENT_ID,
-        scope: SCOPES
-
-    }) // Returns a Promise
-    .then(() => {
-
-        // Listen for Sign In state changes
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-
-        // Handle initial Sign In state
-        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-
-        // Handle Log In & Log Out button clicks
-        authorizeButton.onclick = handleAuthClick;
-        signoutButton.onclick = handleSignoutClick;
-
+    google.accounts.oauth2.initTokenClient({
+        client_id: '610977770552-2reklne551tb7n57dohvfrksmcf865se.apps.googleusercontent.com',
+        scope: 'https://www.googleapis.com/auth/youtube.readonly',
+        callback: (response) => {
+            if (response.error) {
+                console.error(response.error);
+                return;
+            }
+            console.log("Access token:", response.access_token);
+            getChannel(defaultChannel, response.access_token); // Pass token to your API call
+        },
     });
 
 }
+
 
 // Update UI sign in state changes
 function updateSignInStatus(isSignedIn){
@@ -75,22 +60,20 @@ function updateSignInStatus(isSignedIn){
 // Handle Login
 function handleAuthClick(){
 
-    gapi.auth2.getAuthInstance().signIn();
-
+    google.accounts.oauth2.tokenClient.requestAccessToken();
 }
 
-// Handle Logout
-function handleSignoutClick(){
-
-    gapi.auth2.getAuthInstance().signOut();
-
-}
 
 // Get channel from API
-function getChannel(channel){
+function getChannel(channel, accessToken){
 
-     console.log(channel);
+    console.log("Getting channel data for:", channel);
 
+    // Call the YouTube API with the access token
+    fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet&forUsername=${channel}&access_token=${accessToken}`)
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error("Error fetching channel data:", error));
 }
 
 

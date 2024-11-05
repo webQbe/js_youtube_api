@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
+
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -65,11 +66,10 @@
     <!-- LOAD CLIENT-SIDE JS -->
     <script src="client.js"></script>
 
-    <!-- LOAD API SCRIPT -->
-    <script async defer src="https://apis.google.com/js/api.js"
-        onload="this.onload=function(){}; handleClientLoad()"
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
+    <!-- Load the new Google Identity Services API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
 
 </body>
 </html>
