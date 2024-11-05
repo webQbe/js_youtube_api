@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 // Options
 const CLIENT_ID = '610977770552-2reklne551tb7n57dohvfrksmcf865se.apps.googleusercontent.com';
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
@@ -83,14 +85,42 @@ function handleSignoutClick() {
 
 // Get channel from API
 function getChannel(channel, accessToken){
-
     console.log("Getting channel data for:", channel);
 
-    // Call the YouTube API with the access token
-    fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet&forUsername=${channel}&access_token=${accessToken}`)
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error("Error fetching channel data:", error));
+    // Construct URL specify the fields we need
+    // Pass Access Token
+    const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics&forUsername=${channel}&access_token=${accessToken}`;
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('No channel by that name.');  // Error Handling
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            // Further processing with channel data if needed
+        })
+        .catch(error => {
+            console.error("Error fetching channel data:", error);  // Error Handling
+            alert('No channel by that name.');
+        });
+
+
+        /*  Explanation
+
+            Construct URL: 
+            The URL is built with part=snippet,contentDetails,statistics and forUsername=${channel}, allowing us to specify the fields we need.
+
+            Pass Access Token: 
+            access_token=${accessToken} is added to the URL to authenticate the request.
+
+            Error Handling: 
+            If the response.ok is false, the code throws an error that will trigger the .catch block, showing an alert with a "No channel by that name" message.
+        
+        */
+
 }
 
 
