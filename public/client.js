@@ -89,12 +89,6 @@ function handleSignoutClick() {
 // Get channel from API
 function getChannel(channel, accessToken){
 
-/*     if (!accessToken) {
-        console.error("Access token is missing or invalid.");
-        alert("Access token not found. Please sign in again.");
-        return;
-    }
- */
     console.log("Getting channel data for:", channel);
 
     // Construct URL specify the fields we need
@@ -106,18 +100,6 @@ function getChannel(channel, accessToken){
         .then(data => {
 
             console.log("Full API Response:", data); // Log the entire response
-            
-            console.log(data.items[0]);
-/* 
-            if (data.items && data.items.length > 0) {
-
-                console.log(data.items[0]);
-
-            } else {
-
-                alert('No channel data found.');
-
-            } */
         })
         .catch(error => console.error("Error fetching channel data:", error));
 
