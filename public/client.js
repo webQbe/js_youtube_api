@@ -11,7 +11,7 @@ const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
 // Define default channel
-const defaultChannel = 'UC1ZBQ-F-yktYD4r7Z2bWWMA'; // Veritasium's channel ID
+const defaultChannel = 'UC29ju8bIPH5as8OGnQzwJyA';
 
 // Token client
 let tokenClient;
@@ -92,6 +92,7 @@ function getChannel(channel, accessToken){
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log("Full API Response:", data); // Log the entire response
             if (data.items && data.items.length > 0) {
                 console.log(data.items[0]);
             } else {
@@ -100,19 +101,6 @@ function getChannel(channel, accessToken){
         })
         .catch(error => console.error("Error fetching channel data:", error));
 
-
-        /*  Explanation
-
-            Construct URL: 
-            The URL is built with part=snippet,contentDetails,statistics and forUsername=${channel}, allowing us to specify the fields we need.
-
-            Pass Access Token: 
-            access_token=${accessToken} is added to the URL to authenticate the request.
-
-            Error Handling: 
-            If the response.ok is false, the code throws an error that will trigger the .catch block, showing an alert with a "No channel by that name" message.
-        
-        */
 
 }
 
