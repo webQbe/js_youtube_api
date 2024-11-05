@@ -26,7 +26,7 @@ function handleClientLoad(){
         scope: SCOPES,
         callback: (response) => {
             if (response.error) {
-                console.error(response.error);
+                console.error("Error with token response:", response.error);
                 return;
             }
             accessToken = response.access_token; // Store the access token
@@ -65,11 +65,16 @@ function updateSignInStatus(isSignedIn){
 // Handle Login
 function handleAuthClick(){
     // Check if tokenClient is initialized
-    if (!tokenClient) {
+    if (tokenClient) {
+
+        tokenClient.requestAccessToken({ prompt: "" });
+
+    } else {
+
         console.error("Error: tokenClient is not initialized");
         return;
+        
     }
-    tokenClient.requestAccessToken({ prompt: "" });
 }
 
 // Handle Sign Out
@@ -83,6 +88,13 @@ function handleSignoutClick() {
 
 // Get channel from API
 function getChannel(channel, accessToken){
+
+    if (!accessToken) {
+        console.error("Access token is missing or invalid.");
+        alert("Access token not found. Please sign in again.");
+        return;
+    }
+
     console.log("Getting channel data for:", channel);
 
     // Construct URL specify the fields we need
@@ -92,11 +104,17 @@ function getChannel(channel, accessToken){
     fetch(url)
         .then(response => response.json())
         .then(data => {
+
             console.log("Full API Response:", data); // Log the entire response
+
             if (data.items && data.items.length > 0) {
+
                 console.log(data.items[0]);
+
             } else {
+
                 alert('No channel data found.');
+
             }
         })
         .catch(error => console.error("Error fetching channel data:", error));
