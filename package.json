@@ -1,0 +1,16 @@
+{
+  "name": "js_youtube_api",
+  "version": "1.0.0",
+  "description": "- Using YouTube Data API & OAuth2 Login  - Log in user to YouTube account - Enter any channel name to get data      - Error messages - Display channel data     - Channel Title     - Channel ID     - Subscriber count     - View count     - Total video count     - Channel description     - Visit channel button     - Latest videos with thumbnails",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

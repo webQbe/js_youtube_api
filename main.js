@@ -86,6 +86,11 @@ function handleSignoutClick(){
 
 }
 
+// Get channel from API
+function getChannel(channel){
 
+     console.log(channel);
+
+}
 
 
