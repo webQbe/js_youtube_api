@@ -14,19 +14,23 @@ const videoContainer = document.getElementById('video-container');
 // Define default channel
 const defaultChannel = 'techguyweb';
 
+// Token client
+let tokenClient;
+
 
 // Load Auth2 Library
 function handleClientLoad(){
 
-    google.accounts.oauth2.initTokenClient({
-        client_id: '610977770552-2reklne551tb7n57dohvfrksmcf865se.apps.googleusercontent.com',
-        scope: 'https://www.googleapis.com/auth/youtube.readonly',
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: CLIENT_ID,
+        scope: SCOPES,
         callback: (response) => {
             if (response.error) {
                 console.error(response.error);
                 return;
             }
             console.log("Access token:", response.access_token);
+            updateSignInStatus(true); // Indicate user is signed in
             getChannel(defaultChannel, response.access_token); // Pass token to your API call
         },
     });
@@ -60,7 +64,15 @@ function updateSignInStatus(isSignedIn){
 // Handle Login
 function handleAuthClick(){
 
-    google.accounts.oauth2.tokenClient.requestAccessToken();
+    tokenClient.requestAccessToken();
+}
+
+// Handle Sign Out
+function handleSignoutClick() {
+    google.accounts.oauth2.revoke(tokenClient.access_token, () => {
+        console.log('Token revoked');
+        updateSignInStatus(false);
+    });
 }
 
 
@@ -76,4 +88,8 @@ function getChannel(channel, accessToken){
         .catch(error => console.error("Error fetching channel data:", error));
 }
 
+
+// Event Listeners
+authorizeButton.onclick = handleAuthClick;
+signoutButton.onclick = handleSignoutClick;
 
