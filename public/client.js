@@ -62,14 +62,14 @@ function updateSignInStatus(isSignedIn){
 }
 
 // Handle Login
-function handleAuthClick(){
+function handleAuthClick(tokenClient){
 
     tokenClient.requestAccessToken();
 }
 
 // Handle Sign Out
 function handleSignoutClick() {
-    google.accounts.oauth2.revoke(tokenClient.access_token, () => {
+    tokenClient = google.accounts.oauth2.revoke(tokenClient.access_token, () => {
         console.log('Token revoked');
         updateSignInStatus(false);
     });
