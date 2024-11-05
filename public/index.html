@@ -67,7 +67,9 @@
     <script src="client.js"></script>
 
     <!-- Load the new Google Identity Services API -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Load Google API script and call handleClientLoad on load -->
+    <script async defer src="https://accounts.google.com/gsi/client" onload="handleClientLoad()"></script>
+
 
 
 

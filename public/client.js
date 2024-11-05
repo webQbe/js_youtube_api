@@ -64,7 +64,11 @@ function updateSignInStatus(isSignedIn){
 
 // Handle Login
 function handleAuthClick(){
-
+    // Check if tokenClient is initialized
+    if (!tokenClient) {
+        console.error("Error: tokenClient is not initialized");
+        return;
+    }
     tokenClient.requestAccessToken({ prompt: "" });
 }
 
