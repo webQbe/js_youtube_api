@@ -1,6 +1,5 @@
 // Options
 const CLIENT_ID = '610977770552-2reklne551tb7n57dohvfrksmcf865se.apps.googleusercontent.com';
-const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
 // Select DOM Elements
@@ -16,6 +15,7 @@ const defaultChannel = 'techguyweb';
 
 // Token client
 let tokenClient;
+let accessToken;
 
 
 // Load Auth2 Library
@@ -29,9 +29,10 @@ function handleClientLoad(){
                 console.error(response.error);
                 return;
             }
-            console.log("Access token:", response.access_token);
+            accessToken = response.access_token; // Store the access token
+            console.log("Access token:", accessToken);
             updateSignInStatus(true); // Indicate user is signed in
-            getChannel(defaultChannel, response.access_token); // Pass token to your API call
+            getChannel(defaultChannel, accessToken); // Pass token to your API call
         },
     });
 
@@ -62,14 +63,14 @@ function updateSignInStatus(isSignedIn){
 }
 
 // Handle Login
-function handleAuthClick(tokenClient){
+function handleAuthClick(){
 
-    tokenClient.requestAccessToken();
+    tokenClient.requestAccessToken({ prompt: "" });
 }
 
 // Handle Sign Out
 function handleSignoutClick() {
-    tokenClient = google.accounts.oauth2.revoke(tokenClient.access_token, () => {
+    google.accounts.oauth2.revoke(accessToken, () => {
         console.log('Token revoked');
         updateSignInStatus(false);
     });
