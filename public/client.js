@@ -73,7 +73,7 @@ function handleAuthClick(){
 
         console.error("Error: tokenClient is not initialized");
         return;
-        
+
     }
 }
 
@@ -89,12 +89,12 @@ function handleSignoutClick() {
 // Get channel from API
 function getChannel(channel, accessToken){
 
-    if (!accessToken) {
+/*     if (!accessToken) {
         console.error("Access token is missing or invalid.");
         alert("Access token not found. Please sign in again.");
         return;
     }
-
+ */
     console.log("Getting channel data for:", channel);
 
     // Construct URL specify the fields we need
