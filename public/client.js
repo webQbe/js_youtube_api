@@ -106,7 +106,9 @@ function getChannel(channel, accessToken){
         .then(data => {
 
             console.log("Full API Response:", data); // Log the entire response
-
+            
+            console.log(data.items[0]);
+/* 
             if (data.items && data.items.length > 0) {
 
                 console.log(data.items[0]);
@@ -115,7 +117,7 @@ function getChannel(channel, accessToken){
 
                 alert('No channel data found.');
 
-            }
+            } */
         })
         .catch(error => console.error("Error fetching channel data:", error));
 
