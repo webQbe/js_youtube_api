@@ -11,7 +11,7 @@ const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
 // Define default channel
-const defaultChannel = 'techguyweb';
+const defaultChannel = 'TraversyMedia';
 
 // Token client
 let tokenClient;
