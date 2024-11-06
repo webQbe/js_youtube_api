@@ -153,9 +153,9 @@ function getChannel(channelId, apiKey){
             <ul class="collection">
                 <li class="collection-item">Title: ${channel.snippet.title}</li>
                 <li class="collection-item">ID: ${channel.id}</li>
-                <li class="collection-item">Subscribers: ${channel.statistics.subscriberCount}</li>
-                <li class="collection-item">Views: ${channel.statistics.viewCount}</li>
-                <li class="collection-item">Videos: ${channel.statistics.videoCount}</li>
+                <li class="collection-item">Subscribers: ${NumberWithCommas(channel.statistics.subscriberCount)}</li>
+                <li class="collection-item">Views: ${NumberWithCommas(channel.statistics.viewCount)}</li>
+                <li class="collection-item">Videos: ${NumberWithCommas(channel.statistics.videoCount)}</li>
             </ul>
             <p>${channel.snippet.description}</p>
             <hr>
@@ -180,6 +180,24 @@ function showChannelData(data){
     channelData.innerHTML = data;
 
 }
+
+// Format a number with commas as thousands separators
+function NumberWithCommas(number) {
+
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+    /* Explanation
+
+        \B asserts that the position is not at the start or end of a word (non-word boundary).
+
+        (?=(\d{3})+(?!\d)) is a lookahead that ensures each group of three digits is followed by a position where there is no further digit.
+        
+        g is the global flag to apply the regex throughout the string.
+    
+     */
+
+}
+
 
 
 // Event Listeners
