@@ -39,7 +39,7 @@
 6. Test users > Save & Continue
 
 
-## Create an OAuth Key
+## Create an OAuth Client ID
 
 1. Credentials > Create Credentials > OAuth client ID
 2. Create OAuth client ID > Web Application > Create

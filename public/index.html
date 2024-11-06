@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <style>
+
+        /* Hide Content, Log In & Log Out buttons */
+        #content, #signout-button {display: none;}
+
+     </style>
+
+    <title>YouTube Channel Data</title>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+     <nav class="black">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo">YouTube Channel Data</a>
+            </div>
+        </div>
+     </nav>
+     <br>
+     <section>
+        <div class="container">
+            <p>Log in with Google</p>
+            <button class="btn red" id="authorize-button">Log In</button>
+            <button class="btn red" id="signout-button">Log Out</button>
+            <br>
+            <div id="content">
+                <div class="row">
+                    <div class="col s6">
+                        <!-- FORM  -->
+                         <form id="channel-form">
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="Enter Channel Name" id="channel-input">
+                                <input type="submit" value="Get Channel Data" class="btn grey lighten-2">
+                            </div>
+                         </form>
+                    </div>
+                    <div id="channel-data" class="col s6">
+                        <!-- CHANNEL DATA GOES HERE -->
+                    </div>
+                </div>
+                <div class="row" id="video-container">
+
+                    <!-- VIDEOS THUMBNAILS GOES HERE -->
+    
+                </div>
+            </div>
+
+
+        </div>
+     </section>
+    
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- LOAD CLIENT-SIDE JS -->
+    <script src="client.js"></script>
+
+    <!-- Load the new Google Identity Services API -->
+    <!-- Load Google API script and call handleClientLoad on load -->
+    <script async defer src="https://accounts.google.com/gsi/client" onload="handleClientLoad()"></script>
+
+
+
+
+</body>
+</html>
+
+
+
