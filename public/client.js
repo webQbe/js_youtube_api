@@ -10,12 +10,21 @@ const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
-// Define default channel
+// Define default channel by ID
 const defaultChannel = 'UC29ju8bIPH5as8OGnQzwJyA';
 
-// Token client
+// Globals
 let tokenClient;
-let accessToken;
+let apiKey
+
+// Get API Key
+fetch('/config')
+  .then(response => response.json())
+  .then(config => {
+    apiKey = config.apiKey;
+    console.log(apiKey); // Now use apiKey safely in client code
+  });
+
 
 
 // Load Auth2 Library
@@ -32,7 +41,7 @@ function handleClientLoad(){
             accessToken = response.access_token; // Store the access token
             console.log("Access token:", accessToken);
             updateSignInStatus(true); // Indicate user is signed in
-            getChannel(defaultChannel, accessToken); // Pass token to your API call
+            getChannel(defaultChannel, apiKey); // Pass API Key to your API call
         },
     });
 
@@ -86,20 +95,33 @@ function handleSignoutClick() {
 }
 
 
+
+
 // Get channel from API
-function getChannel(channel, accessToken){
+function getChannel(channel, apiKey){
 
     console.log("Getting channel data for:", channel);
 
     // Construct URL specify the fields we need
-    // Pass Access Token
-    const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics&id=${channel}&access_token=${accessToken}`;
+    // Pass API Key
+    const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics&id=${channel}&key=${apiKey}`;
 
     fetch(url)
-        .then(response => response.json())
-        .then(data => {
+    .then(response => response.json())
+    .then(data => {
+        
+          // Check data.items available &
+          // data.items.length is NOT 0
+          if (data.items && data.items.length > 0) {
 
-            console.log("Full API Response:", data); // Log the entire response
+                // Log Channel Data
+                console.log(data.items[0]);
+
+            } else { // Handle Errors
+            
+                alert('No channel data found.');
+
+            } 
         })
         .catch(error => console.error("Error fetching channel data:", error));
 
@@ -110,4 +132,3 @@ function getChannel(channel, accessToken){
 // Event Listeners
 authorizeButton.onclick = handleAuthClick;
 signoutButton.onclick = handleSignoutClick;
-
