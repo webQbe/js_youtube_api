@@ -44,7 +44,7 @@ function handleClientLoad(){
             updateSignInStatus(true); // Indicate user is signed in
             getChannel(defaultChannel, apiKey); // Pass API Key to your API call
         },
-    });
+    })
 
 }
 
@@ -148,11 +148,12 @@ function getChannel(channel, apiKey){
             showChannelData(output);
         })
         .catch(error => console.error("Error fetching channel data:", error));
+    }
 
 
-}
-
-
+// Event Listeners
+authorizeButton.onclick = handleAuthClick;
+signoutButton.onclick = handleSignoutClick;
 // Event Listeners
 authorizeButton.onclick = handleAuthClick;
 signoutButton.onclick = handleSignoutClick;
