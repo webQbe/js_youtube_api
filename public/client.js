@@ -56,7 +56,6 @@ function handleClientLoad(){
             console.log("Access token:", accessToken);
             updateSignInStatus(true); // Indicate user is signed in
             getChannel(channelId, apiKey); // Pass API Key to your API call
-            getChannel(channelId, apiKey); // Pass API Key to your API call
         },
     })
 
@@ -208,12 +207,6 @@ function NumberWithCommas(number) {
 }
 
 
-
-// Event Listeners
-authorizeButton.onclick = handleAuthClick;
-signoutButton.onclick = handleSignoutClick;
-
-
 function requestVideoPlaylist(playlistId, apiKey){
 
     // Define the API endpoint with the parameters
@@ -223,11 +216,54 @@ function requestVideoPlaylist(playlistId, apiKey){
      fetch(url)
      .then(response => response.json())
      .then(data => {
-         if (data.items) {
-             console.log(data);
+
+        // Log Response
+        console.log(data);
+
+        // Select Items
+        const playlistItems = data.items
+        
+        // If playlistItems Available
+         if (playlistItems) {
+
+             // Display Playlist Title
+             let output = '<h4 class="center-align">Latest Videos</h4>';
+
+             // Loop Through playlistItems & 
+             // Append to Output
+             playlistItems.forEach(item => {
+
+                // Select Video ID
+                const videoId = item.snippet.resourceId.videoId;
+
+                output += `
+                    <div class="col s3">
+                        <iframe 
+                            width="100%" 
+                            height="auto" 
+                            src="https://www.youtube.com/embed/${videoId}" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                `;
+             });
+
+             // Output Playlist to UI
+             videoContainer.innerHTML = output;
+
          } else {
-             alert('No videos found in this playlist.');
+
+           videoContainer.innerHTML = 'No Uploaded Videos!';
+
          }
      })
      .catch(error => console.error("Error fetching playlist videos:", error));
 }
+
+
+// Event Listeners
+authorizeButton.onclick = handleAuthClick;
+signoutButton.onclick = handleSignoutClick;
