@@ -1,0 +1,482 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "-96aIye6PZUmAW7l5OjQeNFSM3s",
+    "nextPageToken": "EAAafVBUOkNBb2lFREJGUkRSR016UTFRVFE1TlRjek5VTW9BVWk1dHFIYXVMaUpBMUFCV2pnaVEyaG9WbFpVU1RWaGJsVTBXV3RzVVZORVZtaGplbWhRVWpJMVVtVnVaRXRsVlVWVFJFRnBPWGRKTWpWQ2FFTnZObGxwYjBGM0ln",
+    "items": [
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "fe_DtH-7ZyNMGHI1-T7Q4D1q5fY",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLnVpMFBtSnRLR2hR",
+        "snippet": {
+          "publishedAt": "2024-10-29T14:41:08Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Build A Tesla Car Configurator | Tailwind & Vanilla JavaScript",
+          "description": "Build a Tesla Model Y Configurator interface using nothing but HTML, Tailwind CSS and JavaScript. \n\nCode:\nhttps://github.com/bradtraversy/tesla-configurator-vanilla-js\n\nCodepen:\nhttps://codepen.io/bradtraversy/pen/jOgaRQg\n\nMy Courses:\nhttps://traversymedia.com\n\nTimestamps:\n\n0:00 - Intro\n4:03 - Create Files\n5:40 - Base HTML\n7:08 - Top Bar & Header\n10:21 - Main Layout\n13:10 - Image Section\n15:46 - Start Sidebar\n16:28 - Exterior Buttons\n20:23 - Interior Buttons\n23:30 - Wheel Options\n25:38 - Full Self Driving\n27:36 - Performance Upgrade\n29:00 - Accessories & Pricing\n33:00 - JavaScript Start - Top Bar Animation\n38:07 - Color Buttons Select Border\n44:38 - Image Map Object\n47:36 - Change Image On Color Select\n50:17 - Wheel Selection\n56:04 - Refactor To Keep Selected Color\n1:02:34 - Performance Button Select\n1:05:14 - updateTotalPrice Function\n1:09:22 - Add Wheel Price\n1:10:43 - Add Performance Upgrade Price\n1:12:37 - Full Self-Driving Price\n1:16:43 - Accessories Price\n1:21:55 - Payment Breakdown Calculation",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ui0PmJtKGhQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ui0PmJtKGhQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ui0PmJtKGhQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/ui0PmJtKGhQ/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/ui0PmJtKGhQ/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "ui0PmJtKGhQ"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "N2cGZEhYcozj4nOwo1Rp8U8l3vQ",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLmw5emgwcHFFSHlj",
+        "snippet": {
+          "publishedAt": "2024-10-07T15:28:59Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Create A Booking App From Scratch | React, Next.js, Appwrite, Tailwind",
+          "description": "In this 4-hour project-based course, we will build a booking app for meeting/conference rooms. We will be using React/Next along wth Appwrite, which is an open-source, all-in-one platform with databases, authentication, storage and more.\n\nVisit Appwrite and claim $50 in free Appwrite Cloud Pro credits:\nhttps://apwr.dev/traversymedia50\n\nFinal Code & Theme Files:\nhttps://github.com/bradtraversy/bookit-app\n\nCheck Out My Courses:\nhttps://traversymedia.com\n\nTimestamps:\n0:00 - Intro\n1:30 - Project Demo\n5:00 - Create Next App\n6:40 - Prep & Clean Up\n10:18 - Header Component\n18:32 - Footer Component\n19:53 - Homepage Rooms (JSON data)\n22:32 - RoomCard Component\n27:48 - Heading Component\n28:49 - Room Details Page\n38:20 - Apppwrite Project Setup\n40:26 - Rooms Database, Collections & Attributes\n44:10 - Add User & Room Data\n47:03 - Permissions & API Key\n48:15 - Environment Variables\n51:16 - Create Appwrite Clients\n57:52 - Get All Rooms\n1:04:44 - Get Single Room\n1:06:53 - Login & Register Pages/Forms\n1:11:39 - Middleware in Next.js\n1:15:21 - Protecting Routes\n1:18:07 - Login & Create Session\n1:26:00 - React Toastify Setup\n1:34:36 - Logout & Destroy Session\n1:43:18 - checkAuth Action \n1:47:05 - Show/Hide Nav Links\n1:51:00 - Global Auth Context\n1:59:20 - Auth Wrapper\n2:05:40 - Finish Route Protection\n2:07:15 - Create User\n2:16:50 - Add Room\n2:32:04 - Storage Buckets & Image Upload\n2:44:51 - Single Room Page Image\n2:46:06 - My Rooms Page\n2:59:04 - Delete Room\n3:03:58 - DeleteRoomButton Component\n3:08:38 - Bookings Collection Setup\n3:11:32 - Book Room Action\n3:21:32 - Booking Form\n3:25:40 - Show Bookings\n3:31:50 - BookedRoomCard Component\n3:39:58 - Cancel Booking\n3:51:07 - Check Room Availability\n4:07:18 - Deploy To Vercel",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/l9zh0pqEHyc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/l9zh0pqEHyc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/l9zh0pqEHyc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/l9zh0pqEHyc/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/l9zh0pqEHyc/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "l9zh0pqEHyc"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "qgGfe7dMestwV2DpQEDrvYsfBBU",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLnZpOEdyU3A0WTZ3",
+        "snippet": {
+          "publishedAt": "2024-09-24T16:01:35Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Course Announcement - Laravel From Scratch",
+          "description": "$15 PROMO - LARAVEL2024\nhttps://www.traversymedia.com/laravel-from-scratch\n\nUDEMY:\nhttps://www.udemy.com/course/laravel-from-scratch/?couponCode=LARAVEL2024",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/vi8GrSp4Y6w/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/vi8GrSp4Y6w/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/vi8GrSp4Y6w/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/vi8GrSp4Y6w/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/vi8GrSp4Y6w/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "vi8GrSp4Y6w"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "10unk3g3EgyBARAn5f2YfCr7LTY",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLnRMMDFFek4yLXhB",
+        "snippet": {
+          "publishedAt": "2024-09-02T13:00:55Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Encore Crash Course - TypeScript Backend Framework & Toolset",
+          "description": "This is a first look and crash course for Encore, which is a backend framework & entire backend toolset with a Rust runtime, API validation, integrated infrastructure, developer dashboard and much more. We will be building a URL shortener service.\n\nCode:\nhttps://github.com/bradtraversy/encore-url-shortener\n\nEncore Website:\nhttps://encore.dev\n\nTimestamps:\n\n0:00 - Intro\n1:29 - Slides\n7:41 - Installation & Setup\n10:43 - Running Encore & Dev Dashboard\n11:40 - Create Your First Endpoint\n14:28 - URL Params\n15:52 - Query Params\n18:55 - Start URL Shortener\n20:22 - URL POST Endpoint\n23:41 - PostgreSQL & Migration\n27:49 - Encore DB Shell\n28:50 - URL GET Endpoint\n32:41 - Deploy To The Cloud\n33:51 - Test Cloud API With CURL",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/tL01EzN2-xA/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/tL01EzN2-xA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/tL01EzN2-xA/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/tL01EzN2-xA/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/tL01EzN2-xA/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 3,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "tL01EzN2-xA"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "kUBmSFUFsG-KdCm3fFL_dSGUnDo",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLlhNdTQ2QlJQTHFB",
+        "snippet": {
+          "publishedAt": "2024-08-13T14:00:28Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Ultimate Guide To Web Scraping - Node.js & Python (Puppeteer & Beautiful Soup)",
+          "description": "In this guide you will learn all about web scraping. We will go through some slides and then scrape a website using Node.js and the Puppeteer library as well as Python and the Beautiful Soup library.\n\nCheck Out Our Sponsor: Bright Data @BrightData \nhttps://brdta.com/traversy\n\nCode:\nhttps://github.com/bradtraversy/web-scraper-youtube\n\nTimestamps:\n0:00 - Intro\n2:01 - What Is Web Scraping?\n2:58 - Legal & Ethical Considerations\n3:42 - History Of Web Scraping\n4:41 - Why Use Web Scraping?\n5:53 - How Do Scrapers Work?\n6:57 - Tools & Libraries\n8:32 - Basic Steps\n10:28 - Additional Steps\n12:15 - What Are We Scraping?\n15:03 - Node.js Web Scraper\n33:44 - Python Web Scraper",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/XMu46BRPLqA/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/XMu46BRPLqA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/XMu46BRPLqA/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/XMu46BRPLqA/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/XMu46BRPLqA/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "XMu46BRPLqA"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "rWrKfVYLPkSeD79FE-OA_pQOcXA",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLk1RMDBCVXR0cXIw",
+        "snippet": {
+          "publishedAt": "2024-08-01T13:41:08Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "15 Myths & Misconceptions In Web Developement",
+          "description": "In this video, we will discuss some common myths that surround web development.\n\nCheck Out My Courses:\nhttps://traversymedia.com\n\nTimestamps:\n0:00 - Intro\n1:01 - #1 One & Done\n2:00 - #2 You Need To Learn Everything\n2:34 - #3 You Need a Degree\n3:37 - #4 Web Development is Easy\n4:51 - #5 Front & Backend Are Completely Separate\n6:09 - #6 Web Development Is Dead\n7:23 - #7 Web Dev Is Just About Writing Code\n8:16 - #8 Wordpress Developers Are Not Real Developers\n9:45 - #9 You Need A Fancy Design\n11:09 - #10 The More Features, The Better\n11:46 - #11 You Need A Team\n12:38 - #12 Not All Websites Need To Be Responsive\n13:37 - #13 Websites Need To Be Perfect Before Launch\n14:44 - #14 SEO Is Only About Keywords\n15:35 - #15 You Always Need The Latest Technologies",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/MQ00BUttqr0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/MQ00BUttqr0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/MQ00BUttqr0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/MQ00BUttqr0/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/MQ00BUttqr0/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "MQ00BUttqr0"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "KdOSd73EFLSbv8Tf7NMdqegxx6U",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLkVKUlJqRnZPZ19J",
+        "snippet": {
+          "publishedAt": "2024-07-16T13:31:43Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "5 Reasons Why Your Side Projects Are Failing",
+          "description": "Web development side projects often fail, including many of my own. Let's talk about some of the reasons why this happens with some examples from my own experience.\n\nCheck Out My Courses:\nhttps://traversymedia.com\n\nSocial Media:\nhttps://x.com/traversymedia\nhttps://www.instagram.com/traversymedia\nhttps://www.facebook.com/traversymedia\nhttps://github.com/bradtraversy\n\n\nTimestamps:\n0:00 - Intro\n1:28 - My History With SIde Projects\n2:32 - Taking On Too Much\n3:53 - Lack Of Proper Planning\n5:59 - Unreasonable Expectations\n7:37 - Neglecting Market Research\n8:34 - No Or Bad Marketing",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/EJRRjFvOg_I/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/EJRRjFvOg_I/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/EJRRjFvOg_I/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/EJRRjFvOg_I/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/EJRRjFvOg_I/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "EJRRjFvOg_I"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "nAUW2wR3FxTDPSUKVqzXP3wPFUg",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLlZlTmZIajZNaGdB",
+        "snippet": {
+          "publishedAt": "2024-07-01T14:00:32Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Vue.js Crash Course 2024",
+          "description": "3 Hour crash course of the Vue.js framework. You will learn all the fundamentals including components, directives, lifecycle, events and much more.\n\nCheck Out Our Sponsor Daily.dev:\nhttps://daily.dev/traversy-media\n\nFull Project Code:\nhttps://github.com/bradtraversy/vue-crash-2024\n\nBlog Post:\nhttps://www.traversymedia.com/blog/vue-crash-course\n\nCheck Out My Courses:\nhttps://traversymedia.com\n\nTimestamps:\n0:00 - Intro\n2:19 - Daily.dev Sponsor\n3:11 - What is Vue.js?\n4:45 - Prerequisites\n6:17 - Role of Frontend Frameworks\n8:40 - Why Vue.js?\n11:14 - Vue Components\n13:39 - Getting Setup\n15:40 - Using The Vue CDN\n20:54 - Create-Vue Setup\n22:30 - Vue Official Extension\n22:58 - Exploring Folders & Files\n26:10 - Boilerplate Clean Up\n26:50 - Component Structure\n27:25 - Options API data() & Interpolation\n28:36 - v-if, v-else & v-else-if Directives\n30:43 - v-for Directive & Looping\n32:17 - v-bind Directive\n33:36 - v-on Directive, Events & Methods\n35:55 - Composition API - Long Form\n39:08 - ref() & Reactive Values\n40:35 - Composition API Short Form\n42:41 - Forms & v-model\n46:38 - Delete task\n48:36 - Lifecycle Methods\n49:50 - onMounted & Fetching Data\n51:58 - Vue Jobs Project Start\n52:26 - Tailwind CSS Setup\n56:47 - Theme Files & Images\n58:16 - Navbar Component\n1:01:20 - Hero Component\n1:02:30 - Props\n1:04:57 - HomeCards & Card Container Component\n1:10:20 - JobListings Component & JSON Data\n1:16:47 - JobListing Component\n1:20:53 - JobListings Limit & showButton Props\n1:24:26 - computed() & Truncate Description\n1:30:41 - PrimeIcons\n1:32:35 - Vue Router & Home View\n1:39:52 - Jobs View\n1:41:55 - RouterLink\n1:46:07 - Navbar Active Link\n1:50:42 - Not Found Page\n1:56:27 - JSON Server REST API\n1:59:50 - Fetch Data For JobListings\n2:03:42 - reactive() Function\n2:05:15 - JobListings Refactor To reactive()\n2:07:26 - Vue Spinner\n2:09:50 - Fetch Single Job & Display Data\n2:19:06 -BackButton Component\n2:21:03 - Proxying\n2:23:54 - Add Job Page\n2:32:20 - Save Job POST\n2:37:15 - Toast Notifications\n2:40:08 - Delete Job\n2:44:14 - Edit Page\n2:47:06 - Fetch Job To Edit\n2:50:58 - Update Job\n2:52:50 - Netlify Deployment",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/VeNfHj6MhgA/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/VeNfHj6MhgA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/VeNfHj6MhgA/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/VeNfHj6MhgA/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/VeNfHj6MhgA/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 7,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "VeNfHj6MhgA"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "UYSqQ6HG4kNujZ1e-sk07yuT9XU",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLkk2RENvNVJ3SEJF",
+        "snippet": {
+          "publishedAt": "2024-06-25T13:00:13Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Full App Build - Dev to Deployment - Next.js, Prisma, Neon & Clerk",
+          "description": "Let's build a full stack app with some of my favorite technologies:\n\nNeon (Sponsor) - https://fyi.neon.tech/traversy\nClerk (Sponsor) - https://go.clerk.com/BsG2XQJ\nPrisma - https://www.prisma.io/\nNext.js - https://nextjs.org/\n\nFull Code Repo:\nhttps://github.com/bradtraversy/expense-tracker-nextjs\n\nTimestamps:\n0:00 - Intro\n2:04 - Links & Docs\n3:24 - Create Next App\n5:58 - Layout File\n7:54 - Neon Project Setup\n9:45 - New Database & Role\n10:56 - Neon SQL Editor Demo\n14:18 - Prisma Setup & Schema\n15:20 - User Model\n18:06 - Transaction Model\n20:19 - Generate Client & Migrate\n22:25 - Database File\n25:29 - Clerk Authentication Setup\n28:21 - Header Component\n29:35 - SignIn, SignOut & UserButton\n32:29 - Save User To Neon Database\n42:26 - Guest Component\n44:58 - AddTransaction Component\n50:48 - addTransaction Action\n59:36 - Get & Validate User\n1:01:47 - React Toastify Setup\n1:04:08 - Save Transaction to Neon Database\n1:07:53 - useRef To Clear Form\n1:09:36 - Balance Component\n1:11:17 - getUserBalance Action\n1:15:36 - addCommas() Utility Function\n1:19:03 - Clerk Dashboard Users\n1:19:49 - IncomeExpense Component\n1:21:26 - getIncomeExpense Action\n1:27:06 - TransactionList Component\n1:29:22 - Transaction Type\n1:30:40 - getTransactions Action\n1:34:00 - TransactionItem Component\n1:38:28 - Delete Button\n1:41:07 - deleteTransaction Action\n1:45:07 - Commas & Decimal Places\n1:47:30 - Email/Password Test\n1:48:35 - Vercel Deployment",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/I6DCo5RwHBE/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/I6DCo5RwHBE/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/I6DCo5RwHBE/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/I6DCo5RwHBE/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/I6DCo5RwHBE/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 8,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "I6DCo5RwHBE"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "iXOFq3PRfkTCoWdpHIBroi32oTk",
+        "id": "VVUyOWp1OGJJUEg1YXM4T0duUXp3SnlBLmhodWRvU01NMHlV",
+        "snippet": {
+          "publishedAt": "2024-06-03T14:00:27Z",
+          "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+          "title": "Admin Dashboard From Scratch - Next.js, TypeScript, Shadcn/ui",
+          "description": "In this video, we will build a dashboard interface from scratch.\n\nCheck out the sponsor, Mailtrap:\nhttps://l.rw.rw/traversy_media\n\nFull Source Code:\nhttps://github.com/bradtraversy/traversypress-ui\n\n This project will use the following technologies:\n\n- React/Next.js\n- Shadcn/ui\n- TypeScript\n- Tailwind CSS\n- Recharts\n- Lucide React\n- React Hook Form & Zod\n\nFull Next.js Course:\nhttps://www.traversymedia.com/nextjs-from-scratch\nUdemy Version:\nhttps://www.udemy.com/course/nextjs-from-scratch\n\nTimestamps:\n0:00 - Intro\n4:02 - Project Setup\n9:18 - Initialize Shadcn/ui\n10:37 - Using Shadcn Components\n12:54 - Navbar, Avatar, Dropdown Components\n24:04 - Sidebar & Command Component\n33:40 - Dashboard Cards\n39:55 - Make The Cards Dynamic\n44:13 - Posts Data Array & Types\n47:50 - Posts Table\n59:13 - Limit & Sort Posts\n1:02:27 - Analytics Data & Types\n1:04:30 - Analytics Chart & Recharts\n1:11:10 - Posts Page\n1:13:50 - Back Button Component\n1:16:38 - Pagination Component\n1:18:00 - Edit Post Page & Form\n1:23:34 - Zod Form Schema\n1:25:17 - Get Post Data\n1:27:00 - useForm Hook\n1:28:45 - Create Form\n1:38:03 - Toast Component\n1:42:29 - Dark Mode Toggler\n1:49:48 - Auth Page & Layout\n1:55:26 - Tabs Component\n2:00:47 - Login Form\n2:10:50 - Register Form\n2:13:52 - Auth Page Theme Toggler",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/hhudoSMM0yU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/hhudoSMM0yU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/hhudoSMM0yU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/hhudoSMM0yU/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/hhudoSMM0yU/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Traversy Media",
+          "playlistId": "UU29ju8bIPH5as8OGnQzwJyA",
+          "position": 9,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "hhudoSMM0yU"
+          },
+          "videoOwnerChannelTitle": "Traversy Media",
+          "videoOwnerChannelId": "UC29ju8bIPH5as8OGnQzwJyA"
+        }
+      }
+    ],
+    "pageInfo": {
+      "totalResults": 986,
+      "resultsPerPage": 10
+    }
+  }
+  
