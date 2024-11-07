@@ -56,6 +56,7 @@ function handleClientLoad(){
             console.log("Access token:", accessToken);
             updateSignInStatus(true); // Indicate user is signed in
             getChannel(channelId, apiKey); // Pass API Key to your API call
+            getChannel(channelId, apiKey); // Pass API Key to your API call
         },
     })
 
@@ -203,3 +204,4 @@ function NumberWithCommas(number) {
 // Event Listeners
 authorizeButton.onclick = handleAuthClick;
 signoutButton.onclick = handleSignoutClick;
+
