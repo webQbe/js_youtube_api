@@ -165,6 +165,14 @@ function getChannel(channelId, apiKey){
 
             // Pass Output to showChannelData()
             showChannelData(output);
+
+            // Get PlaylistID From Response
+            const playlistId = channel.contentDetails.relatedPlaylists.uploads;
+
+            // Get Playlist Item Data
+            // Pass PlaylistID to requestVideoPlaylist()
+            requestVideoPlaylist(playlistId);
+
         })
         .catch(error => console.error("Error fetching channel data:", error));
     }
@@ -205,3 +213,21 @@ function NumberWithCommas(number) {
 authorizeButton.onclick = handleAuthClick;
 signoutButton.onclick = handleSignoutClick;
 
+
+function requestVideoPlaylist(playlistId, apiKey){
+
+    // Define the API endpoint with the parameters
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&key=${apiKey}`;
+
+     // Make the request
+     fetch(url)
+     .then(response => response.json())
+     .then(data => {
+         if (data.items) {
+             console.log(data);
+         } else {
+             alert('No videos found in this playlist.');
+         }
+     })
+     .catch(error => console.error("Error fetching playlist videos:", error));
+}
