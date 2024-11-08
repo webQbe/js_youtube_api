@@ -13,8 +13,9 @@ const videoContainer = document.getElementById('video-container');
 
 // Globals
 let tokenClient;
-let apiKey
+let apiKey;
 let channelId = 'UC29ju8bIPH5as8OGnQzwJyA';
+let accessToken;
 
 
 // Form Submit & Change Channel
@@ -170,7 +171,7 @@ function getChannel(channelId, apiKey){
 
             // Get Playlist Item Data
             // Pass PlaylistID to requestVideoPlaylist()
-            requestVideoPlaylist(playlistId);
+            requestVideoPlaylist(playlistId, accessToken);
 
         })
         .catch(error => console.error("Error fetching channel data:", error));
@@ -207,10 +208,10 @@ function NumberWithCommas(number) {
 }
 
 
-function requestVideoPlaylist(playlistId, apiKey){
+function requestVideoPlaylist(playlistId, accessToken){
 
     // Define the API endpoint with the parameters
-    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&key=${apiKey}`;
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&access_token=${accessToken}`;
 
      // Make the request
      fetch(url)
