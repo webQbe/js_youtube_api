@@ -228,7 +228,7 @@ function requestVideoPlaylist(playlistId, accessToken){
          if (playlistItems) {
 
              // Display Playlist Title
-             let output = '<h4 class="center-align">Latest Videos</h4>';
+             let output = '<br><h4 class="center-align">Latest Videos</h4>';
 
              // Loop Through playlistItems & 
              // Append to Output
