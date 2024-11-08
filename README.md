@@ -103,6 +103,17 @@
     4. Save Changes
 
 
+## Set App Publishing Status
+
+- Go to `OAuth consent screen` > `Publishing status` > Choose`Back to Testing` or `PUBLISH APP`
+- With the app in `"testing"` mode, only users you add in the Google Cloud Console can access it. 
+
+- If someone with an email not on the test user list tries to log in, they’ll see an error message stating that they’re not authorized.
+
+- To allow broader access without this restriction, you would eventually need to re-publish the app to `"production"` once you're ready for general access.
+
+
+
 ## Troubleshooting
 
 - If you encounter any issues, 
